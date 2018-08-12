@@ -98,3 +98,11 @@ translate([120/2,0,0])union(){
 }
 //lcdLegs_test();
 
+module pcbleg(){
+    difference(){
+    cylinder(r=4, h=21);
+    cylinder(r=1.3, h=23);
+    }
+}
+
+translate([-(60-2-4.5),-(60-2-4.5),57-2])rotate([180,0,0])pcbleg();
